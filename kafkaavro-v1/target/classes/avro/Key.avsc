@@ -1,0 +1,11 @@
+{
+     "type": "record",
+     "namespace": "com.sk",
+     "name": "CDRKey",
+     "doc": "Avro Schema for CDRKey",
+     "fields": [
+       { "name": "fileName", "type": "string", "doc": "OriginalFileName" },
+       { "name": "fileDestination", "type": "string", "doc": "FileDestination Directory" },
+       { "name": "fileID", "type": "string", "doc": "fileID from filename" }
+     ]
+}

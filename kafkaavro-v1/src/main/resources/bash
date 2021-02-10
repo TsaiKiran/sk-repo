@@ -1,0 +1,15 @@
+//handy commands
+
+docker run --net=host -it confluentinc/cp-schema-registry:3.3.0 bash
+
+docker run --net=host -it confluentinc/cp-kafka:3.3.0 bash
+
+
+kafka-avro-console-producer \
+    --broker-list 127.0.0.1:9092 --topic inputv1
+
+kafka-avro-console-consumer \
+    --broker-list 127.0.0.1:9092 --topic inputv1
+
+docker run --net=host -it confluentinc/cp-kafka:3.3.0 bash
+

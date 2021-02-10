@@ -1,0 +1,15 @@
+{
+     "type": "record",
+     "namespace": "com.sk",
+     "name": "CDR",
+     "doc": "Avro Schema for CDR",
+     "fields": [
+       { "name": "fileName", "type": "string", "doc": "Original input FileName" },
+       { "name": "CustomerName", "type": "string", "doc": "" },
+       { "name": "CustAccountNum", "type": "string", "doc": "Customer Account number" },
+       { "name": "DataUsage", "type": "float", "doc": "Data used for billing cycle in MB" },
+       { "name": "PlanID", "type": "int", "doc": "Plan type of customer" },
+       { "name": "Bill", "type": ["null","long"],"default":null,"doc": "bill for used data" },
+       { "name": "emailStatement", "type": "boolean", "default": true, "doc": "Approval for email statement,instead of postal service" }
+     ]
+}
